@@ -44,8 +44,20 @@ this.top = top;
 
 
 };
+function resetGame() {
+        location.reload();
+}
 
-
+function pauseGame(){
+    if (gameActive == false) return true;
+        gameActive = false
+};
+        // Pour lancer le jeux //
+function startGame(){
+	if (gameActive == true) return false; 
+	gameActive = true;
+};
+var gameActive = false;
 var mob1 = new Sprite("style/img/mob1.png", 100, 50);
 var mob2 = new Sprite("style/img/mob1.png", 250, 50);
 var mob3 = new Sprite("style/img/mob1.png", 400, 50);
@@ -107,6 +119,7 @@ vaisseau.top = 800;
         // Récupère les KeyCode //
 document.onkeydown = function(event) {
     console.log(event.keyCode);
+    if (gameActive) {
     if (event.keyCode == 37) {      // FLéche de gauche, aller à gauche //
         vaisseau.left -= 20;
     } else if (event.keyCode == 39) { // Fléche de droite, aller à droite //
@@ -115,7 +128,7 @@ document.onkeydown = function(event) {
         vaisseau.top -= 20;
     } else if (event.keyCode == 40) { // Fléche du bas, aller en bas //
         vaisseau.top += 20;
-} 
+} }
     // Pour empécher l'image de sortire de l'écran //
 if (vaisseau.left <0) { 
     vaisseau.left = 0;
@@ -130,19 +143,18 @@ if (vaisseau.top > document.body.clientHeight - vaisseau._node.height) {
     vaisseau._top = document.body.clientHeight - vaisseau._node.height;
 }
 if ( event.keyCode == 32) { // Pour le missile touche espace pour l'afficher //
-    
         missile.display = "block";
         missile.left = vaisseau.left + ( vaisseau._node.width - missile._node.width ) /2; // Pour centrer le missile //
         missile.top = vaisseau.top;
         missile.startAnimation(moveMissile, 50);
-}
-};
+}};
 
 
         // -------------------------------------- PARTIE INTERVAL POUR FAIRE BOUGER -------------------------------- //
         // Permet de déclancer un délai régulier a un traitement //
 Sprite.prototype.startAnimation = function(fct, interval) 
 {
+    
 if ( this._clock) 
     window.clearInterval(this._clock);
     var _this = this;
@@ -158,14 +170,17 @@ Sprite.prototype.stopAnimation = function() {
 
         // Pour faire bouger le missile //
 function moveMissile( missile ) {
+    if (gameActive) {
     missile.top -= 20;
 if (missile.top < -50) {
     missile.stopAnimation();
     missile.display = "none";
 
-}       // Pour faire dépop //
+}}
+        // Pour faire dépop //
     for(var i=1; i<=40; i++) {
         var mob = window["mob"+i]; 
+        if (gameActive) {
             if (mob.display == "none") continue;
         if ( missile.checkCollision(mob)) {
              missile.stopAnimation();
@@ -174,24 +189,26 @@ if (missile.top < -50) {
              mob.display = "none";
         }
     }
-};
+}};
 
         // Pour faire bouger les mobs //
 function moveMobToLeft(mob) {
+    if (gameActive) {
     mob.left -= 10;
 if (mob.left <= 0) {
     mob.top += 50;
     mob.startAnimation(moveMobToRight, 50); 
 }
-};
+}};
 
 function moveMobToRight(mob) {
+    if (gameActive) {
     mob.left += 10;
 if ( mob.left > document.body.clientWidth - mob._node.width) {
     mob.top += 50;
     mob.startAnimation(moveMobToLeft, 50);
     
-}};
+}}};
     // Pour créer l'évenement sur chaqe variable de mob //
 for (var i=1; i<=40; i++) {
     window["mob"+i].startAnimation(moveMobToRight, 50)
