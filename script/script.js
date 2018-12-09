@@ -70,41 +70,41 @@ var mob8 = new Sprite("style/img/mob1.png", 1150, 50);
 var mob9 = new Sprite("style/img/mob1.png", 1300, 50);
 var mob10 = new Sprite("style/img/mob1.png", 1450, 50);
 
-var mob11 = new Sprite("style/img/mob1.png", 100, 250);
-var mob12 = new Sprite("style/img/mob1.png", 250, 250);
-var mob13 = new Sprite("style/img/mob1.png", 400, 250);
-var mob14 = new Sprite("style/img/mob1.png", 550, 250);
-var mob15 = new Sprite("style/img/mob1.png", 700, 250);
+var mob11 = new Sprite("style/img/mob1.png", 100, 200);
+var mob12 = new Sprite("style/img/mob1.png", 250, 200);
+var mob13 = new Sprite("style/img/mob1.png", 400, 200);
+var mob14 = new Sprite("style/img/mob1.png", 550, 200);
+var mob15 = new Sprite("style/img/mob1.png", 700, 200);
 
-var mob16 = new Sprite("style/img/mob1.png", 850, 250);
-var mob17 = new Sprite("style/img/mob1.png", 1000, 250);
-var mob18 = new Sprite("style/img/mob1.png", 1150, 250);
-var mob19 = new Sprite("style/img/mob1.png", 1300, 250);
-var mob20 = new Sprite("style/img/mob1.png", 1450, 250);
+var mob16 = new Sprite("style/img/mob1.png", 850, 200);
+var mob17 = new Sprite("style/img/mob1.png", 1000, 200);
+var mob18 = new Sprite("style/img/mob1.png", 1150, 200);
+var mob19 = new Sprite("style/img/mob1.png", 1300, 200);
+var mob20 = new Sprite("style/img/mob1.png", 1450, 200);
 
-var mob21 = new Sprite("style/img/mob1.png", 100, 450);
-var mob22 = new Sprite("style/img/mob1.png", 250, 450);
-var mob23 = new Sprite("style/img/mob1.png", 400, 450);
-var mob24 = new Sprite("style/img/mob1.png", 550, 450);
-var mob25 = new Sprite("style/img/mob1.png", 700, 450);
+var mob21 = new Sprite("style/img/mob1.png", 100, 350);
+var mob22 = new Sprite("style/img/mob1.png", 250, 350);
+var mob23 = new Sprite("style/img/mob1.png", 400, 350);
+var mob24 = new Sprite("style/img/mob1.png", 550, 350);
+var mob25 = new Sprite("style/img/mob1.png", 700, 350);
 
-var mob26 = new Sprite("style/img/mob1.png", 850, 450);
-var mob27 = new Sprite("style/img/mob1.png", 1000, 450);
-var mob28 = new Sprite("style/img/mob1.png", 1150, 450);
-var mob29 = new Sprite("style/img/mob1.png", 1300, 450);
-var mob30 = new Sprite("style/img/mob1.png", 1450, 450);
+var mob26 = new Sprite("style/img/mob1.png", 850, 350);
+var mob27 = new Sprite("style/img/mob1.png", 1000, 350);
+var mob28 = new Sprite("style/img/mob1.png", 1150, 350);
+var mob29 = new Sprite("style/img/mob1.png", 1300, 350);
+var mob30 = new Sprite("style/img/mob1.png", 1450, 350);
 
-var mob31 = new Sprite("style/img/mob1.png", 100, 650);
-var mob32 = new Sprite("style/img/mob1.png", 250, 650);
-var mob33 = new Sprite("style/img/mob1.png", 400, 650);
-var mob34 = new Sprite("style/img/mob1.png", 550, 650);
-var mob35 = new Sprite("style/img/mob1.png", 700, 650);
+var mob31 = new Sprite("style/img/mob1.png", 100, 550);
+var mob32 = new Sprite("style/img/mob1.png", 250, 550);
+var mob33 = new Sprite("style/img/mob1.png", 400, 550);
+var mob34 = new Sprite("style/img/mob1.png", 550, 550);
+var mob35 = new Sprite("style/img/mob1.png", 700, 550);
 
-var mob36 = new Sprite("style/img/mob1.png", 850, 650);
-var mob37 = new Sprite("style/img/mob1.png", 1000, 650);
-var mob38 = new Sprite("style/img/mob1.png", 1150, 650);
-var mob39 = new Sprite("style/img/mob1.png", 1300, 650);
-var mob40 = new Sprite("style/img/mob1.png", 1450, 650);
+var mob36 = new Sprite("style/img/mob1.png", 850, 550);
+var mob37 = new Sprite("style/img/mob1.png", 1000, 550);
+var mob38 = new Sprite("style/img/mob1.png", 1150, 550);
+var mob39 = new Sprite("style/img/mob1.png", 1300, 550);
+var mob40 = new Sprite("style/img/mob1.png", 1450, 550);
 
 
 
